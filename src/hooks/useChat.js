@@ -200,6 +200,6 @@ export function useChat() {
     sessions: state.sessions,
     // Expose skill detection for UI hints
     detectSkill: SkillsService.detectSkill,
-    getSkillMeta SkillsService.getMetadata,
+    getSkillMetadata: SkillsService.getMetadata,
   };
 }
