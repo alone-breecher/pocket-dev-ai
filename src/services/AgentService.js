@@ -57,7 +57,7 @@ export class AgentService {
       model: routing.model,
       messages,
       systemPrompt,
-      meta {
+      meta: {
         intent: routing.intent,
         skill,
         autoRouted: routing.auto,
