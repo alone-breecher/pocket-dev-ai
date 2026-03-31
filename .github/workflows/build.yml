@@ -28,6 +28,13 @@ jobs:
       - name: Prebuild Android
         run: npx expo prebuild --platform android --clean
 
+      - name: Fix Gradle version for Expo 51
+        run: |
+          cd android
+          sed -i 's|gradle-[0-9.]*-all.zip|gradle-8.3-all.zip|g' gradle/wrapper/gradle-wrapper.properties
+          sed -i 's|gradle-[0-9.]*-bin.zip|gradle-8.3-bin.zip|g' gradle/wrapper/gradle-wrapper.properties
+          cat gradle/wrapper/gradle-wrapper.properties
+
       - name: Build APK
         run: cd android && ./gradlew assembleRelease --no-daemon
 
