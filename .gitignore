@@ -1,0 +1,30 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+android/
+ios/
+.env
+.env.local
+.env*.local
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# EAS
+.easignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+artifacts/
+*.apk
+*.aab
