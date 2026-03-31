@@ -119,7 +119,7 @@ class StorageService {
     ]);
 
     return {
-      apiUrl: apiUrl || 'http://localhost:11434',
+      apiUrl: apiUrl || 'https://api.ollama.com',
       apiKey: apiKey || '',
       selectedModel: selectedModel || 'qwen2.5-coder:7b',
       sessions: sessions || [],

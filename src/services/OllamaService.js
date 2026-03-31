@@ -22,7 +22,7 @@ Be direct, practical, and developer-friendly.`;
 
 class OllamaService {
   constructor() {
-    this.baseUrl = 'http://localhost:11434';
+    this.baseUrl = 'https://api.ollama.com';
     this.apiKey = '';
     this.requestTimeout = 60000; // 60 seconds
     this.abortControllers = new Map();
